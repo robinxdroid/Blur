@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    tools:context="net.robinx.blur.BlurDrawableActivity">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/bg_2"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/bg_3"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/bg_4"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/bg_5"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/blur_drawable_container"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BlurDrawable"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+
+    <net.robinx.lib.blur.widget.BlurRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/bg_5"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BlurRelativeLayout"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"/>
+    </net.robinx.lib.blur.widget.BlurRelativeLayout>
+
+
+    <net.robinx.lib.blur.widget.BlurMaskRelativeLayout
+        android:id="@+id/blur_mask_container"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BlurMaskRelativeLayout"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"/>
+    </net.robinx.lib.blur.widget.BlurMaskRelativeLayout>
+</RelativeLayout>
