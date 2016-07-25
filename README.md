@@ -29,8 +29,8 @@ blurBitmap = StackBlur.blurNatively(willBlurBitmap, blurRadius, false); //Native
 
 blurBitmap = StackBlur.blurNativelyPixels(willBlurBitmap, blurRadius, false);  //Native Pixels方式 ，NDK实现，推荐使用
 
-blurBitmap = StackBlur.blurRenderScript(context,willBlurBitmap, blurRadius, false); //RenderScript方式，速度极快，约为java方式10倍的速度，缺点：API17以上有效，radius最大只能设置25，
-                                                                                              //导致模糊的深度不够，不过可以先压缩图片，此问题不是太严重,如果可以忽略API 17的问题，此方式首选
+blurBitmap = StackBlur.blurRenderScript(context,willBlurBitmap, blurRadius, false); //RenderScript方式，速度极快，约为java方式100倍的速度，NDK方式20倍速度（不同图片质量测试所得结果不同，仅供参考），缺点：API17以上有效，
+// radius最大只能设置25，导致模糊的深度不够，不过可以先压缩图片，此问题不是太严重,如果可以忽略API 17的问题，此方式首选
 ```   
 
 **BlurDrawable**
