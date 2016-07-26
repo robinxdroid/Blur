@@ -15,8 +15,8 @@
 
 ### Screenshot ###
 
-![](https://raw.githubusercontent.com/robinxdroid/Blur/master/device-2016-07-25-145247.png) 
-![](https://raw.githubusercontent.com/robinxdroid/Blur/master/device-2016-07-25-150628.png) 
+![](https://raw.githubusercontent.com/robinxdroid/Blur/master/1.png) 
+![](https://raw.githubusercontent.com/robinxdroid/Blur/master/2.png) 
 
 ### Usage ###
 Gradle:
