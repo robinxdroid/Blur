@@ -1,4 +1,6 @@
 ##Blur##
+[DEPRECATED]此库不再更新,新库地址：[https://github.com/robinxdroid/BlurView](https://github.com/robinxdroid/BlurView)
+
 高斯模糊库，四种模糊方式 
 
 ### Support ###
